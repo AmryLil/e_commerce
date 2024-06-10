@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <title>Add product</title>
+  </head>
+  <body>
+    <div class="container flex justify-center items-center">
+      <div
+        class="w-4/5 shadow-lg rounded-sm flex justify-center bg-blue-100 flex-row"
+      >
+        <div class="w-4/5 p-4 px-10">
+          <div class="text-center text-3xl font-bold mb-3 text-purple-900">
+            NAMA TOKO
+          </div>
+          <h2 class="text-2xl font-semibold text-center mb-4">
+            Add Product to your Shop
+          </h2>
+          <form
+            enctype="multipart/form-data"
+            method="POST"
+            class="flex flex-col"
+          >
+            <label for="productname">Product Name</label>
+            <input
+              type="text"
+              class="mb-2 rounded-md py-1 px-2 shadow-sm"
+              placeholder="product name"
+            />
+            <label for="brand">Brand</label>
+            <input
+              type="text"
+              class="mb-2 rounded-md py-1 px-2 shadow-sm"
+              placeholder="product name"
+            />
+            <label for="category">Category</label>
+            <select
+              name=""
+              id="category"
+              class="mb-2 rounded-md py-1 px-2 pr-4 shadow-sm"
+            >
+              <option value="Fashion">Fashion</option>
+              <option value="Sport">Sport</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Health and Beauty">Health and Beauty</option>
+              <option value="Automotive">Automotive</option>
+              <option value="Home and Garden">Home and Garden</option>
+              <option value="Software and Apps">Software and Apps</option>
+            </select>
+            <label for="stock">Stock</label>
+            <input
+              type="number"
+              class="mb-2 rounded-md py-1 px-2 shadow-sm"
+              placeholder="stock"
+            />
+            <label for="Price">Price</label>
+            <input
+              type="text"
+              class="mb-2 rounded-md py-1 px-2 shadow-sm"
+              placeholder="Rp ....."
+            />
+            <label for="Image">Image</label>
+            <input type="file" class="mb-2 rounded-md py-1 px-2 shadow-sm" />
+            <textarea name="desc" id="desc" cols="30" rows="4">
+Description</textarea
+            >
+
+            <button
+              type="submit"
+              class="bg-purple-600 p-1 rounded-md shadow-lg text-slate-50 font-bold"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+        <div
+          style="
+            background-image: url('https://images.unsplash.com/photo-1586880244386-8b3e34c8382c?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            min-width: 300px;
+            min-height: 700px;
+          "
+          class="w-9/12 h-full bg-cover bg-no-repeat bg-center"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
